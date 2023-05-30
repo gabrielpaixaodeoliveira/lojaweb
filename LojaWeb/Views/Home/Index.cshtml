@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model UsuarioViewModel
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label for="email">Email</label>
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control disabled", disabled="disabled", @readonly = "readonly"  })
+        </div>
+        <div class="form-group">
+            <label for="Nome">Nome</label>
+            @Html.TextBoxFor(m => m.Nome, new { @class = "form-control", disabled="disabled", @readonly = "readonly" })
+        </div>
+        <div class="form-group">
+            <label for="DtNascimento">Data Nascimento</label>
+            @Html.TextBoxFor(m => m.DtNascimento, new { @class = "form-control disabled", disabled="disabled", @readonly = "readonly"  })
+        </div>
+        <div class="form-group">
+            <label for="Cpf">Cpf</label>
+            @Html.TextBoxFor(m => m.Cpf, new { @class = "form-control disabled", disabled="disabled", @readonly = "readonly"  })
+        </div>
+        <div class="form-group">
+            <label for="Login">Login</label>
+            @Html.TextBoxFor(m => m.Login, new { @class = "form-control disabled", disabled="disabled", @readonly = "readonly" })
+        </div>
+    </form>
+</body>
+</html>
